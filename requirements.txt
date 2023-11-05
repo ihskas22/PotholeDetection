@@ -3,4 +3,4 @@ opencv_python_headless==4.8.0.74
 Pillow==9.5.0
 pytube==15.0.0
 streamlit==1.23.1
-ultralytics==8.0.198
+ultralytics==8.0.151
