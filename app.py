@@ -51,12 +51,11 @@ confidence = float(st.sidebar.slider(
 
 model=None
 # loading weight file
-weight_file="D:/SIT/Final Year Project/potholetry1/PotholeDetectionApp/weights/best.pt"
-#weight_file = st.sidebar.file_uploader("Upload Model Weight File", type=("pt"))
+weight_file = st.sidebar.file_uploader("Upload Model Weight File", type=("pt"))
 set_background('bgimages/background1.jpg')
 # loading weight file and creat file
 if weight_file:
-    model_path = Path(weight_file)
+    model_path = Path(weight_file.name)
     try:
         model = helper.load_model(model_path)
         st.success("Model successfully loaded.")
